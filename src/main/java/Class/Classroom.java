@@ -55,6 +55,7 @@ public class Classroom {
         for (Student student : students) {
             if (student.getFirstName().equals(firstName) && student.getLastName().equals(lastName)) {
                 stud.remove(student);
+                break;
             }
         }
         this.students = stud.toArray(new Student[]{});
