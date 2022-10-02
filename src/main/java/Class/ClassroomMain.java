@@ -17,17 +17,15 @@ public class ClassroomMain {
 
         Student student2 = new Student("Shawn", "B", examScoresss);
 
-        classroom.addStudent(student);
-        classroom.addStudent(student1);
-
+           classroom.addStudent(student);
+      classroom.addStudent(student1);
+      
        classroom.getAverageExamScore();
-        System.out.println(classroom);
+       System.out.println(classroom);
+      classroom.removeStudent("Leon", "Hunter");
          System.out.println(classroom);
-       classroom.removeStudent("Shawn", "B");
-         System.out.println(classroom);
-
        System.out.println(Arrays.toString(classroom.getStudentbyScore()));
-       System.out.println(classroom.getGradeBook());
+      System.out.println(classroom.getGradeBook());
 
     }
 }
